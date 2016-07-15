@@ -1,0 +1,33 @@
+<template name='mates'>
+  <div class="addmate">
+    <span>添加新成员:</span>
+    <input class="name" type="text" placeholder="姓名" />
+    <select class="parts">
+      <option >请选择</option>
+      {{#each parts}}
+      <option value ={{name}}>{{name}}</option>
+      {{/each}}   
+    </select>  
+    <button class="add">添加</button>
+    <span class="errorinfo"></span>
+  </div>
+  <div>
+    <span>订饭人数：</span>
+    <span> {{foodNumber}}</span>
+
+  </div>
+  <div>
+  <span class="des">公司所有人员(点击选中订餐)</span>
+  {{#each mates}}
+  <div data-id={{_id}} class="item">
+    <span class="name"><span class="na">姓名:</span> {{name}}</span>
+    <span class="part"><span class="na">部门:</span>{{part}}</span>
+    
+    <button class="select">点击选中订餐</button>
+    
+    <input type="button" class="deletemate" value="删除人员信息" />
+  </div>
+  {{/each}}
+  </div>
+  
+</template>

@@ -1,0 +1,57 @@
+/* CSS declarations go here */
+.main{
+  margin:10px;
+  padding: 10px;
+  text-align: center;
+}
+.item{
+  float: left;
+  border-style: groove;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+.addmate{
+  margin: 20px;
+}
+.deletemate{
+      background-color: yellow;
+    border-radius: 10px;
+    padding: 8px;
+}
+.na{
+      color: blue;
+    background-color: chartreuse;
+
+}
+.name{
+  border-bottom-style: double;
+    padding: 5px;
+    text-align: left;
+}
+.part{
+  border-bottom-style: double;
+    padding: 5px;
+    text-align: left;
+}
+.food{
+  margin: 10px;
+}
+.des{
+     margin: 5px;
+    text-align: left;
+    float: left;
+    width: 100%;
+}
+.add{
+   background-color: yellow;
+    border-radius: 10px;
+    padding: 8px;
+    width: 60px；
+}
+.select{
+  background-color: yellow;
+    border-radius: 10px;
+    padding: 8px;
+}
+

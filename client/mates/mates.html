@@ -17,15 +17,15 @@
 
   </div>
   <div>
-  <span class="des">公司所有人员(点击选中订餐)</span>
+  <span class="des">公司所有人员(点击选中订餐)   {{currentDate}}</span>
   {{#each mates}}
   <div data-id={{_id}} class="item">
     <span class="name"><span class="na">姓名:</span> {{name}}</span>
     <span class="part"><span class="na">部门:</span>{{part}}</span>
     
-    <button class="select">点击选中订餐</button>
+    <button class="select {{classActive food}}">{{textInput food }}</button>
     
-    <input type="button" class="deletemate" value="删除人员信息" />
+    <input type="button" class="deletemate" value="删除" />
   </div>
   {{/each}}
   </div>
